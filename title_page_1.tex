@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page 
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
+% move this file to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[dvips]{hyperref}
+\usepackage{setspace}
+\usepackage[a4paper]{geometry}
+\usepackage[pages=1]{background}
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=1,
+angle=0,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{background.jpg}
+ }%
+}
+
+\begin{document}
+
+\begin{titlepage}
+
+\clearpage
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\begin{figure}[t]
+\centering
+    \vspace*{-0.4in}
+    \hspace*{-0.4in}
+	\includegraphics[width=1.1\columnwidth]{logo.jpg}
+\end{figure}\\[1.5cm]
+
+\vspace*{+0.5in}
+\textsc{\LARGE --  Master thesis  --}\\
+\vspace*{.4in}
+\textsc{\Large \textsc{Master 2 modelisation in ecology}}\\[0.5cm] % Major heading such as course name
+{\Large \textsc{2019-2020}}
+\vspace*{.3in}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+\begin{spacing}{2.0}
+{ \huge \bfseries Phase-type distribution in the f-coalescence}\\[0.4cm] % Title of your document
+\end{spacing}
+\HRule \\[0.7cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\vspace*{+0.4in}
+\begin{minipage}[l]{1\textwidth}
+\begin{flushleft} \large
+
+\textbf{Author: \hfill \large Beginning - end:}\\
+ \href{mailto:colin.guetemme@live.fr}{Colin \textsc{Guétemme}} \hfill 01/06/20 - 12/06/20 \\[0.4cm] % Your name
+
+\textbf{Supervisor: \hfill \large Date of submission:} \\
+ \href{mailto:asger@au.dk}{Asger \textsc{Hobolth}} \hfill 07/06/20\\[0.4cm]
+
+\textbf{Tutor: \hfill \large Defense date:} \\
+\href{mailto:cedric.wolf@univ-rennes1.fr}{Cédric \textsc{Wolf}} \hfill 19/06/20 \\[0.4cm]
+
+\textbf{Aarhus Universitet} \\
+Nordre Ringgade 1\\
+8000 Aarhus\\
+\end{flushleft}
+\end{minipage}
+~
+
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+% Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\end{document}
